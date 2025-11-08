@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <div>
       <Stack direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
-        <Header title={"Dashboard"} subTitle={"Welcome to your dashboard"} />
+        <Header title={"Dashboard"} subTitle={"Welcome to your dashboard"}  isDashboard/>
         <Box textAlign={"end"} mb={1.3}>
           <Button
             sx={{ textTransform: "capitalize" }}

@@ -226,7 +226,7 @@ export default function Line({ isDashboard = false }) {
   const theme = useTheme();
   return (
     <Box sx={{ height: isDashboard ? "280px" : "75vh" }}>
-      <Header title="Line Chart" subTitle="Simple Line Chart" />
+      {isDashboard ? null : <Header title="Line Chart" subTitle="Simple Line Chart" />}
       <ResponsiveLine /* or Line for fixed dimensions */
         data={data}
         curve="catmullRom"

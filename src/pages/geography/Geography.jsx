@@ -9,7 +9,7 @@ export default function Geography({ isDashboard = false}) {
   const theme = useTheme();
   return (
     <Box>
-      <Header title="Geography" subTitle="Simple Geography Chart" />
+      {isDashboard ? null :<Header title="Geography" subTitle="Simple Geography Chart" />}
       <Box
         sx={{
           height: isDashboard ? "350px" : "70vh",

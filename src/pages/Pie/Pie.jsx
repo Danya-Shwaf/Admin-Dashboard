@@ -40,7 +40,7 @@ export default function Pie({ isDashboard = false }) {
   const theme = useTheme();
   return (
     <Box sx={{ height: isDashboard ? "220px" : "75vh" }}>
-      <Header title="Pie Chart" subTitle="Simple Pie Chart" />
+      {isDashboard ? null :<Header title="Pie Chart" subTitle="Simple Pie Chart" />}
       <ResponsivePie
         data={data}
         theme={{
